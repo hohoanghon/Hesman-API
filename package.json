@@ -5,7 +5,7 @@
   "description": "",
   "scripts": {
     "debug": "nodemon --inspect-brk=0.0.0.0:9339 server.js",
-    "dev": "json-server NftHesman.json",
+    "dev": "nodemon server.js",
     "prod": "pm2 start server.js --name bami-api-backend",
     "slate": "rimraf node_modules && npm install",
     "lint": "eslint server"

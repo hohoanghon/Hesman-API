@@ -1,6 +1,5 @@
 import express from "express";
 import MainController from "../controllers/main.controller";
-import token from "../../../../items.js";
 
 const router = express.Router();
 
@@ -56,7 +55,7 @@ router.route("/circulatingSupply")
  *            }
  */
 
- router.route("/price")
+ router.route("/tokens")
  .get(MainController.getPrice);
 
 
@@ -84,7 +83,4 @@ router.route("/circulatingSupply")
 
   router.route("/totalSupply")
   .get(MainController.getTotalSupply);
-
-  router.route("/tokens")
-  .get(token);
 export default router;
